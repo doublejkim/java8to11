@@ -18,7 +18,7 @@ public class CompletableFutureApp2 {
         thenCombineTest();
         System.out.println("===================================================");
 
-        System.out.println("offOf() test ================================");
+        System.out.println("allOf() test ================================");
         allOfTest();
         System.out.println("===================================================");
 
@@ -84,7 +84,7 @@ public class CompletableFutureApp2 {
             return "World";
         });
 
-        // offOf() 를 사용한 이후에 return 값을 받으려면 아래와 같이 사용하면 되지만, 아무것도 blocking 되지 않음
+        // allOf() 를 사용한 이후에 return 값을 받으려면 아래와 같이 사용하면 되지만, 아무것도 blocking 되지 않음
         List<CompletableFuture<String>> futures = Arrays.asList(helloFuture, worldFuture);
         CompletableFuture[] futuresArray = futures.toArray(new CompletableFuture[futures.size()]);
 
