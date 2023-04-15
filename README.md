@@ -4,6 +4,30 @@
 
 [1.예제](src/me/doublej/annotation/AnnotationApp.java)
 
+### 1.1. Retention 어노테이션 정책
+
+- SOURCE
+> 어노테이션을 주석처럼사용. 컴파일러가 컴파일할때 어노테이션의 메모리를 버림. (source 에서만 사용)
+
+- CLASS
+> Default. 컴파일할때는 어노테이션의 메모리를 가져가지만 실질적으로 런타임시에는 사라짐. (*.class 에서만 사용)
+
+- RUNTIME
+> 어노테이션을 런타임시에까지 사용가능. 즉 Refelction API 등을 사용하여 어노테이션 정보를 알 수 있음 
+
+### 1.2. Target 어노테이션
+
+- Element.Type.PACKAGE : 패키지 선언
+- Element.Type.TYPE : 타입 선언 (클래서, 인터페이스, enum)
+- Element.Type.ANNOTATION_TYPE : 어노테이션
+- Element.Type.CONSTRUCTOR : 생성자
+- Element.Type.FIELD : 필드. 멤버변수
+- Element.Type.LOCAL_VARIABLE : 지역변수 
+- Element.Type.METHOD : 메소드
+- Element.Type.PARAMETER : 파라미터
+- Element.Type.TYPE_PARAMETER : 타입 파라미터
+- Element.Type.TYPE_USE : 타입
+
 ## 2. 리스트 조작
 
 - 필요없는 항목제거
@@ -45,3 +69,10 @@
 - exceptionally() : 에러 발생시 컨트롤. handle() 도 사용 가능 
 
 [4.2.예제](src/me/doublej/completablefuture/CompletableFutureApp2.java)
+
+## 5. Reflection 기초
+
+- 클래스 정보 획득
+- 생성자 획득 후 인스턴스 생성
+- 필드 획득 및 사용
+- 메소드 호출
