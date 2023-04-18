@@ -82,3 +82,7 @@
 - 커스텀 Container Service 를 만들고 DI 를 할 수 있는 커스텀 어노테이션 생성
 - Reflection 기능을 활용하여 Class<?> 정보를 받아서 객체를 생성
 - Reflection 기능을 활용하여 어노테이션 정보를 확인하여 내부 객체 주입
+
+## 7. Proxy Pattern 기초
+
+- Proxy Pattern 기초 구현
