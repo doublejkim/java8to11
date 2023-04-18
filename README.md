@@ -77,12 +77,23 @@
 - 필드 획득 및 사용
 - 메소드 호출
 
+[5.예제](src/me/doublej/reflection/ReflectionApp.java)
+
 ## 6. Reflection 응용
 
 - 커스텀 Container Service 를 만들고 DI 를 할 수 있는 커스텀 어노테이션 생성
 - Reflection 기능을 활용하여 Class<?> 정보를 받아서 객체를 생성
 - Reflection 기능을 활용하여 어노테이션 정보를 확인하여 내부 객체 주입
 
+[6.예제](src/me/doublej/reflectionadv/RefelctionAdvApp.java)
+
 ## 7. Proxy Pattern 기초
 
 - Proxy Pattern 기초 구현
+
+[7.예제](src/me/doublej/proxy/basic/ProxyBasicApp.java)
+
+## 8. Dynamic Proxy
+
+- Java 에서 제공하는 Proxy 를 사용하여 동적으로 Proxy 객체 생성
+- 단점 : Interface 형태로 넘겨야 사용가능
