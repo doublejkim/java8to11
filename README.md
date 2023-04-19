@@ -2,7 +2,7 @@
 
 ## 1. Custom Annotation
 
-[1.예제](src/me/doublej/annotation/AnnotationApp.java)
+[1.예제](src/main/me/doublej/annotation/AnnotationApp.java)
 
 ### 1.1. Retention 어노테이션 정책
 
@@ -33,7 +33,7 @@
 - 필요없는 항목제거
 - 정렬, 역정렬등 
 
-[2.예제](src/me/doublej/addinterface/IfApp.java)
+[2.예제](src/main/me/doublej/addinterface/IfApp.java)
 
 ## 3. Stream 활용
 
@@ -46,7 +46,7 @@
 
 위의 메소드를 활용하여 stream 을 편하게 활용 가능 
 
-[3.예제](src/me/doublej/stream/StreamTest.java)
+[3.예제](src/main/me/doublej/stream/StreamTest.java)
 
 ## 4. CompletableFuture 활용
 
@@ -57,7 +57,7 @@
 - 비동기로 callback 을 이용하여 실행 (thenApply()...Callable / thenAccept() ... Consumer)
 - 비동기 동작과 상관없이 일단 수행된다면 무조건 그 뒤에 실행 (thenRiun()... Runnable
 
-[4.1.예제](src/me/doublej/completablefuture/CompletableFutureApp1.java)
+[4.1.예제](src/main/me/doublej/completablefuture/CompletableFutureApp1.java)
 
 ### 4.2. CompletableFuture 의 응용
 
@@ -68,7 +68,7 @@
 - anyOf() : 가장 빨리 끝나는 작업이 하나의 결과에 콜백수행
 - exceptionally() : 에러 발생시 컨트롤. handle() 도 사용 가능 
 
-[4.2.예제](src/me/doublej/completablefuture/CompletableFutureApp2.java)
+[4.2.예제](src/main/me/doublej/completablefuture/CompletableFutureApp2.java)
 
 ## 5. Reflection 기초
 
@@ -77,7 +77,7 @@
 - 필드 획득 및 사용
 - 메소드 호출
 
-[5.예제](src/me/doublej/reflection/ReflectionApp.java)
+[5.예제](src/main/me/doublej/reflection/ReflectionApp.java)
 
 ## 6. Reflection 응용
 
@@ -85,13 +85,13 @@
 - Reflection 기능을 활용하여 Class<?> 정보를 받아서 객체를 생성
 - Reflection 기능을 활용하여 어노테이션 정보를 확인하여 내부 객체 주입
 
-[6.예제](src/me/doublej/reflectionadv/RefelctionAdvApp.java)
+[6.예제](src/main/me/doublej/reflectionadv/RefelctionAdvApp.java)
 
 ## 7. Proxy Pattern 기초
 
 - Proxy Pattern 기초 구현
 
-[7.예제](src/me/doublej/proxy/basic/ProxyBasicApp.java)
+[7.예제](src/main/me/doublej/proxy/basic/ProxyBasicApp.java)
 
 ## 8. Dynamic Proxy
 
