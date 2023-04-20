@@ -97,3 +97,5 @@
 
 - Java 에서 제공하는 Proxy 를 사용하여 동적으로 Proxy 객체 생성
 - 단점 : Interface 형태로 넘겨야 사용가능
+
+[8.예제](src/main/me/doublej/proxy/dynamic/DynamicProxyApp.java)
