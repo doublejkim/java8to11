@@ -2,7 +2,7 @@
 
 ## 1. Custom Annotation
 
-[1.예제](src/main/me/doublej/annotation/AnnotationApp.java)
+[1.예제](src/main/java/me/doublej/annotation/AnnotationApp.java)
 
 ### 1.1. Retention 어노테이션 정책
 
@@ -33,7 +33,7 @@
 - 필요없는 항목제거
 - 정렬, 역정렬등 
 
-[2.예제](src/main/me/doublej/addinterface/IfApp.java)
+[2.예제](src/main/java/me/doublej/addinterface/IfApp.java)
 
 ## 3. Stream 활용
 
@@ -46,7 +46,7 @@
 
 위의 메소드를 활용하여 stream 을 편하게 활용 가능 
 
-[3.예제](src/main/me/doublej/stream/StreamTest.java)
+[3.예제](src/main/java/me/doublej/stream/StreamTest.java)
 
 ## 4. CompletableFuture 활용
 
@@ -57,7 +57,7 @@
 - 비동기로 callback 을 이용하여 실행 (thenApply()...Callable / thenAccept() ... Consumer)
 - 비동기 동작과 상관없이 일단 수행된다면 무조건 그 뒤에 실행 (thenRiun()... Runnable
 
-[4.1.예제](src/main/me/doublej/completablefuture/CompletableFutureApp1.java)
+[4.1.예제](src/main/java/me/doublej/completablefuture/CompletableFutureApp1.java)
 
 ### 4.2. CompletableFuture 의 응용
 
@@ -68,7 +68,7 @@
 - anyOf() : 가장 빨리 끝나는 작업이 하나의 결과에 콜백수행
 - exceptionally() : 에러 발생시 컨트롤. handle() 도 사용 가능 
 
-[4.2.예제](src/main/me/doublej/completablefuture/CompletableFutureApp2.java)
+[4.2.예제](src/main/java/me/doublej/completablefuture/CompletableFutureApp2.java)
 
 ## 5. Reflection 기초
 
@@ -77,7 +77,7 @@
 - 필드 획득 및 사용
 - 메소드 호출
 
-[5.예제](src/main/me/doublej/reflection/ReflectionApp.java)
+[5.예제](src/main/java/me/doublej/reflection/ReflectionApp.java)
 
 ## 6. Reflection 응용
 
@@ -85,17 +85,25 @@
 - Reflection 기능을 활용하여 Class<?> 정보를 받아서 객체를 생성
 - Reflection 기능을 활용하여 어노테이션 정보를 확인하여 내부 객체 주입
 
-[6.예제](src/main/me/doublej/reflectionadv/RefelctionAdvApp.java)
+[6.예제](src/main/java/me/doublej/reflectionadv/RefelctionAdvApp.java)
 
 ## 7. Proxy Pattern 기초
 
 - Proxy Pattern 기초 구현
 
-[7.예제](src/main/me/doublej/proxy/basic/ProxyBasicApp.java)
+[7.예제](src/main/java/me/doublej/proxy/basic/ProxyBasicApp.java)
 
 ## 8. Dynamic Proxy
 
 - Java 에서 제공하는 Proxy 를 사용하여 동적으로 Proxy 객체 생성
 - 단점 : Interface 형태로 넘겨야 사용가능
 
-[8.예제](src/main/me/doublej/proxy/dynamic/DynamicProxyApp.java)
+[8.예제](src/main/java/me/doublej/proxy/dynamic/DynamicProxyApp.java)
+
+## 9. Cglib Proxy
+
+- 스프링, 하이버네이트 등에서 사용하는 라이브러리
+- 버전 호환성이 좋은 편은 아니라서 라이브러리 내부에 내장된 형태로 제공되기도함
+- Class 형태로 넘겨서 Proxy 를 사용 할 수 있음 
+
+[9.예제](src/main/java/me/doublej/proxy/cglib/CglibProxyApp.java)
