@@ -31,6 +31,7 @@ public class CglibProxyApp {
                     System.out.println("======================== before work by cglib proxy...");
                     Object invoke = method.invoke(bookServiceConcrete, args);
                     System.out.println("======================== after work by cglib proxy...");
+                    return invoke;
                 }
 
                 return method.invoke(bookServiceConcrete, args);

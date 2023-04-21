@@ -107,3 +107,16 @@
 - Class 형태로 넘겨서 Proxy 를 사용 할 수 있음 
 
 [9.예제](src/main/java/me/doublej/proxy/cglib/CglibProxyApp.java)
+
+## 10. Byte-Buddy Proxy
+
+- 3rd-party proxy
+- Cglib 과 동일하게 Class 형태로 넘겨서 Proxy 를 사용할 수 있음
+- Cglib, ByteBuddy 둘다 발생할 수 있는 단점
+  - 상속을 사용하지 못하는 경우 프록시 만들 수 없음
+    - private 생성자만 는경우
+    - final class 인 경우
+  - 인터페이스가 있을 때는 인터페이스의 프록시를 만들어 사용할 것
+- 일단 예제대로 작성을했지만 어째 proxy 가 제대로 동작 안하는듯...
+
+[10.예제](src/main/java/me/doublej/proxy/bytebuddy/BytebuddyProxyApp.java)
